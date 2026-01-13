@@ -1,118 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lars Pauwels</title>
-    <meta name="description" content="In-depth guides from Lars Pauwels on money, lean business, systems, and performance." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Clean, modern type -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lars Pauwels</title>
+  <meta name="description" content="Clear thinking about money, lean business, systems, and performance." />
 
-  <body>
-    <!-- Subtle background accents -->
-    <div class="bg-accents" aria-hidden="true">
-      <svg class="bg-lines" viewBox="0 0 1200 500" preserveAspectRatio="none">
-        <path d="M0,260 C220,220 330,300 520,260 C720,215 860,250 1200,210" />
-        <path d="M0,310 C250,340 420,240 610,290 C820,345 980,300 1200,330" />
-      </svg>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-      <div class="hex hex-1"></div>
-      <div class="hex hex-2"></div>
-      <div class="node node-1"></div>
-      <div class="node node-2"></div>
-      <div class="node node-3"></div>
-    </div>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#" aria-label="Home">
-          <span class="brand-dot"></span>
-          <span class="brand-name">Lars Pauwels</span>
-        </a>
+<body>
 
-        <nav class="nav">
-          <a href="#writing">Writing</a>
-          <a href="#guides">Guides</a>
-          <a href="#about">About</a>
-        </nav>
-      </div>
-    </header>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">Lars Pauwels</div>
+    <nav class="nav">
+      <a href="#writing">Writing</a>
+      <a href="#frameworks">Frameworks</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
 
-    <main class="container">
-      <!-- Hero -->
-      <section class="hero" id="top">
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
         <p class="kicker">In-depth guides from</p>
-        <h1 class="title">Lars Pauwels</h1>
-        <p class="subtitle">Clear thinking about money, lean business, systems, and a high-performance life.</p>
-      </section>
+        <h1>Lars Pauwels</h1>
+        <p class="hero-sub">
+          Clear thinking about money, lean business, systems,
+          and a high-performance life.
+        </p>
+      </div>
+    </div>
+  </section>
 
-      <!-- Cards -->
-      <section class="cards" id="guides" aria-label="Guides">
-        <article class="card">
-          <div class="card-ill" aria-hidden="true">
-            <!-- minimal line illustration -->
-            <svg viewBox="0 0 120 90">
-              <path d="M20 65 C30 45, 55 40, 65 55 C72 66, 60 75, 48 75 C34 75, 22 72, 20 65 Z" />
-              <path d="M65 55 C78 40, 95 42, 100 55" />
-              <circle cx="44" cy="46" r="4" />
-            </svg>
-          </div>
+  <!-- CONTENT -->
+  <section class="content">
+
+    <div class="container">
+
+      <!-- FRAMEWORKS -->
+      <section id="frameworks" class="cards">
+        <div class="card">
           <h3>Financial Intelligence</h3>
-          <p>Practical frameworks to build freedom through money.</p>
-        </article>
+          <p>Practical frameworks to create clarity, control, and freedom through money.</p>
+        </div>
 
-        <article class="card">
-          <div class="card-ill" aria-hidden="true">
-            <svg viewBox="0 0 120 90">
-              <path d="M28 68 L28 30 L92 30 L92 68 Z" />
-              <path d="M36 40 L84 40" />
-              <path d="M36 50 L76 50" />
-              <path d="M36 60 L70 60" />
-              <path d="M78 50 L92 50" />
-            </svg>
-          </div>
+        <div class="card">
           <h3>Lean Business</h3>
-          <p>Build calm, profitable businesses with less complexity.</p>
-        </article>
+          <p>Design calm, profitable businesses with minimal overhead and noise.</p>
+        </div>
 
-        <article class="card">
-          <div class="card-ill" aria-hidden="true">
-            <svg viewBox="0 0 120 90">
-              <path d="M25 70 L55 45 L75 60 L98 30" />
-              <path d="M98 30 L98 48" />
-              <path d="M98 30 L80 30" />
-              <circle cx="55" cy="45" r="3.5" />
-              <circle cx="75" cy="60" r="3.5" />
-              <circle cx="98" cy="30" r="3.5" />
-            </svg>
-          </div>
+        <div class="card">
           <h3>Systems & Thinking</h3>
-          <p>Mental models, decision-making, and clarity.</p>
-        </article>
+          <p>Mental models and decision-making systems for long-term leverage.</p>
+        </div>
 
-        <article class="card">
-          <div class="card-ill" aria-hidden="true">
-            <svg viewBox="0 0 120 90">
-              <path d="M30 70 C32 52, 44 40, 60 40 C76 40, 88 52, 90 70" />
-              <path d="M45 70 L45 55" />
-              <path d="M75 70 L75 55" />
-              <path d="M45 55 L75 55" />
-              <circle cx="60" cy="32" r="7" />
-            </svg>
-          </div>
+        <div class="card">
           <h3>Health & Performance</h3>
-          <p>Build a strong body and focused mind for the long run.</p>
-        </article>
+          <p>Build a strong body and focused mind that compounds for decades.</p>
+        </div>
       </section>
 
-      <!-- Writing list -->
-      <section class="writing" id="writing">
+      <!-- WRITING -->
+      <section id="writing" class="writing">
         <h2>Writing</h2>
-        <ul class="post-list">
+        <ul>
           <li><a href="#">How to think clearly about money</a></li>
           <li><a href="#">Designing a calm, profitable life</a></li>
           <li><a href="#">The mistake ambitious people make</a></li>
@@ -122,29 +83,29 @@
         </ul>
       </section>
 
-      <!-- About -->
-      <section class="about" id="about">
+      <!-- ABOUT -->
+      <section id="about" class="about">
         <h2>About</h2>
         <p>
-          I’m Lars Pauwels. I write in-depth guides on financial intelligence for online entrepreneurs—
-          with a focus on building lean, profitable systems that create freedom.
+          I’m Lars Pauwels. I help online entrepreneurs replace financial chaos
+          with clarity by building clean systems, clear numbers, and calm businesses.
         </p>
       </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p class="footer-text">© <span id="year"></span> Lars Pauwels — minimal, useful, calm.</p>
-        <div class="footer-links">
-          <a href="#top">Top</a>
-          <a href="#writing">Writing</a>
-          <a href="#guides">Guides</a>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Lars Pauwels</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
 </html>
