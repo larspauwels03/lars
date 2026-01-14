@@ -1,5 +1,3 @@
-CCS:
-
 :root{
   /* Pauwels Finance inspired navy palette */
   --bg: #ffffff;
@@ -286,4 +284,3 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   .cards{ grid-template-columns: 1fr; }
   .hero{ padding-top: 64px; }
 }
-
