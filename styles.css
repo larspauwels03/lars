@@ -1,19 +1,19 @@
 :root{
   /* Pauwels Finance inspired navy palette */
-  --bg: #linear-gradient(135deg, #0a1f4d 0%, #0c2d5f 50%, #051528 100%);
-
   --navy-900: #050b1c;   /* very dark */
   --navy-800: #071433;
   --navy-700: #0a1f4d;   /* main brand navy */
   --blue-600: #0e5cad;   /* accent blue */
 
-  --text: ##f5f5f5;
-  --muted: ##c9d1e0;
+  /* Page background (this is the “header vibe” applied to the whole site) */
+  --bg: linear-gradient(180deg, #eef4ff 0%, #ffffff 55%, #ffffff 100%);
 
-  /* map original variables */
-  --navy: var(--navy-700);
+  --text: #0b1220;
+  --muted: #4b5b77;
+
   --line: rgba(10,31,77,0.12);
-  --card: #rgba(15, 35, 65, 0.4);
+
+  --card: rgba(255,255,255,0.72);
   --card-border: rgba(10,31,77,0.14);
 
   --shadow: 0 10px 35px rgba(11,18,32,0.08);
@@ -23,6 +23,7 @@
 
 *{ box-sizing: border-box; }
 html, body{ height: 100%; }
+
 body{
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -44,7 +45,8 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   top: 0;
   z-index: 10;
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.88);
+  /* now matches page background (no “separate white bar” look) */
+  background: rgba(238, 244, 255, 0.65);
   border-bottom: 1px solid var(--line);
 }
 
@@ -61,11 +63,11 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   gap: 10px;
   font-weight: 600;
 }
+
 .brand-dot{
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  /* stronger Pauwels look */
   background: linear-gradient(180deg, var(--blue-600), var(--navy-700));
   box-shadow: 0 0 0 4px rgba(10,31,77,0.12);
 }
@@ -90,8 +92,7 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
 .hero{
   padding: 86px 0 34px;
   text-align: center;
-  /* subtle Pauwels-style blue glow without changing layout */
-  background: radial-gradient(900px 420px at 50% -10%, rgba(14,92,173,0.08), transparent);
+  background: radial-gradient(900px 420px at 50% -10%, rgba(14,92,173,0.10), transparent);
 }
 
 .kicker{
@@ -104,7 +105,6 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   margin: 0;
   font-size: clamp(44px, 6vw, 72px);
   letter-spacing: -0.04em;
-  /* make it clearly Pauwels navy (was gray-blue before) */
   color: var(--navy-700);
 }
 
@@ -149,7 +149,6 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
 }
 .card svg path, .card svg circle{
   fill: none;
-  /* more navy (less gray) */
   stroke: rgba(10,31,77,0.62);
   stroke-width: 2.2;
   stroke-linecap: round;
